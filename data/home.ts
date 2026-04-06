@@ -39,7 +39,7 @@ export const topPicks = [
   {
     title: "Best WiFi 7 Routers",
     description: "Fast picks for gamers, power users, and multi-gig homes.",
-    href: "/categories/routers",
+    href: "/best/best-wifi-7-routers",
   },
   {
     title: "Best Gaming Monitors",

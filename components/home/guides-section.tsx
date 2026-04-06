@@ -21,7 +21,7 @@ export function GuidesSection() {
 
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {latestGuides.map((guide) => (
-            <Link href={guide.href}>
+            <Link key={guide.href} href={guide.href}>
               <article className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white transition duration-200 hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-sm">
                 <div className="h-44 bg-gradient-to-br from-zinc-100 to-zinc-200" />
                 <div className="p-5">
