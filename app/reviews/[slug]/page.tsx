@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { getReviewBySlug, reviews } from "@/data/reviews";
+import { EditorialNote } from "@/components/reviews/editorial-note";
 
 type ReviewPageProps = {
   params: Promise<{
@@ -61,6 +62,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
         </p>
 
         <div className="mt-8 rounded-3xl border border-zinc-200 bg-white p-6">
+          <EditorialNote />
           <div className="h-64 rounded-2xl bg-zinc-100" />
           <div className="mt-6 flex flex-wrap gap-3">
             <a
